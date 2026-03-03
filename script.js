@@ -4,14 +4,14 @@ const productos = [
         id: 1,
         nombre: "Queso Fundido 1kg",
         precio: 2000,
-        imagen: "",
+        imagen: "media/queso.jpg",
         descripcion: "Queso fresco elaborado artesanalmente con leche de vaca. Perfecto para sandwiches y ensaladas."
     },
     {
         id: 2,
         nombre: "Yogurt  500ml",
         precio: 450,
-        imagen: "",
+        imagen: "media/pomo youg.jpg",
         descripcion: "Yogurt con azúcar añadida. Rico en probióticos y perfecto para el desayuno."
     },
    
@@ -19,28 +19,28 @@ const productos = [
         id: 3,
         nombre: "Cajas de Helado de 4L ",
         precio: 2100,
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        imagen: "",
         descripcion: "Helado Cremoso emvasado en caja de carton"
     },
     {
         id: 4,
         nombre: "cubeta de Helado de 4L ",
         precio: 2300,
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        imagen: "",
         descripcion: "Helado Cremoso emvasado en cubeta plastica"
     },
     {
         id: 5,
         nombre: "paletica con cobertura de chocolate",
         precio: 100,
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        imagen: "media/pale.jpg",
         descripcion: "Paletica de sabor con una cobertura gruesa de chocolate"
     },
     {
         id: 6,
         nombre: "Bolsa de Pan ",
-        precio: 0,
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        precio: 350,
+        imagen: "media/pan.jpg",
         descripcion: "bolsa de 8 panes recien hechos envsado al vacio "
     },
 
@@ -48,23 +48,30 @@ const productos = [
         id: 7,
         nombre: "bolitas de queso",
         precio: 300,
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        imagen: "media/bolas de queso.jpg",
         descripcion: "bolsita sellada de 10 bolitas de queso ideales para entrantes"
     },
 
     {
         id: 8,
-        nombre: "bolsa de bocaditos",
-        precio:0, 
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-        descripcion: "Helado Cremoso emvasado en cubeta plastica"
+        nombre: "bolsa 24 de bocaditos",
+        precio:450, 
+        imagen: "media/bocaditos.jpg",
+        descripcion: "bocaditos semidulces"
     },
     {
         id: 9,
         nombre: "cubeta de Yogurt de 4L ",
         precio: 2100,
-        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        imagen: "media/cubeta yog.jpg",
         descripcion: "Cubeta Plastica de yogurt probiotico de 4lts"
+    },
+    {
+        id: 10,
+        nombre: "pan desmayado",
+        precio: 130,
+        imagen: "media/desmayado.jpg",
+        descripcion: "libra de pan al estilo desmayado semidulce"
     },
 
 
