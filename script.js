@@ -2,46 +2,74 @@
 const productos = [
     {
         id: 1,
-        nombre: "Queso Fresco 500g",
-        precio: 5.99,
-        imagen: "https://images.unsplash.com/photo-1565299585323-38174c739b6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        nombre: "Queso Fundido 1kg",
+        precio: 2000,
+        imagen: "",
         descripcion: "Queso fresco elaborado artesanalmente con leche de vaca. Perfecto para sandwiches y ensaladas."
     },
     {
         id: 2,
-        nombre: "Yogurt Natural 1L",
-        precio: 3.50,
-        imagen: "https://images.unsplash.com/photo-1567337710282-00832b415979?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-        descripcion: "Yogurt natural sin azúcar añadida. Rico en probióticos y perfecto para el desayuno."
+        nombre: "Yogurt  500ml",
+        precio: 450,
+        imagen: "",
+        descripcion: "Yogurt con azúcar añadida. Rico en probióticos y perfecto para el desayuno."
     },
+   
     {
         id: 3,
-        nombre: "Helado de Vainilla 500ml",
-        precio: 4.75,
-        imagen: "https://images.unsplash.com/photo-1563806225043-f0449a0fbf56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-        descripcion: "Helado cremoso de vainilla natural. Elaborado con los mejores ingredientes."
+        nombre: "Cajas de Helado de 4L ",
+        precio: 2100,
+        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        descripcion: "Helado Cremoso emvasado en caja de carton"
     },
     {
         id: 4,
-        nombre: "Queso Gouda 400g",
-        precio: 7.25,
-        imagen: "https://images.unsplash.com/photo-1599492587356-89da44ceb04f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-        descripcion: "Queso Gouda añejado con un sabor suave y textura cremosa. Ideal para tablas de quesos."
+        nombre: "cubeta de Helado de 4L ",
+        precio: 2300,
+        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        descripcion: "Helado Cremoso emvasado en cubeta plastica"
     },
     {
         id: 5,
-        nombre: "Yogurt de Fresa 500g",
-        precio: 2.99,
-        imagen: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-        descripcion: "Yogurt cremoso con trozos de fresa natural. Delicioso y nutritivo."
+        nombre: "paletica con cobertura de chocolate",
+        precio: 100,
+        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        descripcion: "Paletica de sabor con una cobertura gruesa de chocolate"
     },
     {
         id: 6,
-        nombre: "Helado de Chocolate 500ml",
-        precio: 4.99,
+        nombre: "Bolsa de Pan ",
+        precio: 0,
         imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-        descripcion: "Helado de chocolate intenso con trozos de chocolate. Un clásico irresistible."
-    }
+        descripcion: "bolsa de 8 panes recien hechos envsado al vacio "
+    },
+
+    {
+        id: 7,
+        nombre: "bolitas de queso",
+        precio: 300,
+        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        descripcion: "bolsita sellada de 10 bolitas de queso ideales para entrantes"
+    },
+
+    {
+        id: 8,
+        nombre: "bolsa de bocaditos",
+        precio:0, 
+        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        descripcion: "Helado Cremoso emvasado en cubeta plastica"
+    },
+    {
+        id: 9,
+        nombre: "cubeta de Yogurt de 4L ",
+        precio: 2100,
+        imagen: "https://images.unsplash.com/photo-1570194065657-4227ee6b53d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        descripcion: "Cubeta Plastica de yogurt probiotico de 4lts"
+    },
+
+
+     
+
 ];
 
 // Carrito de compras
