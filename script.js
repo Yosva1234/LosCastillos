@@ -253,6 +253,38 @@ cartCount.parentElement.addEventListener('click', () => {
     cartModal.style.display = 'block';
 });
 
+// --- Mobile menu functionality ---
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuClose = document.querySelector('.mobile-menu-close');
+const overlayEl = document.getElementById('overlay');
+
+function openMobileMenu() {
+    mobileMenu.classList.add('active');
+    overlayEl.classList.add('active');
+}
+
+function closeMobileMenu() {
+    mobileMenu.classList.remove('active');
+    overlayEl.classList.remove('active');
+}
+
+mobileMenuBtn.addEventListener('click', openMobileMenu);
+mobileMenuClose.addEventListener('click', closeMobileMenu);
+overlayEl.addEventListener('click', () => {
+    // cerrar tanto el menú como el carrito si están abiertos
+    closeMobileMenu();
+    if (cartModal.style.display === 'block') {
+        cartModal.style.display = 'none';
+    }
+});
+
+// cerrar menu al seleccionar una opción de navegación
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+});
+
+
 // Cerrar modal del carrito
 closeModal.addEventListener('click', () => {
     cartModal.style.display = 'none';

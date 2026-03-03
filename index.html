@@ -26,8 +26,26 @@
                 <i class="fas fa-shopping-cart"></i>
                 <span id="cart-count">0</span>
             </div>
+            <!-- botón de menú móvil -->
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
+
+    <!-- menú lateral móvil -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Cerrar menú">&times;</button>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- overlay para menú y modales -->
+    <div class="overlay" id="overlay"></div>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">

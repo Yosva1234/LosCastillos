@@ -217,7 +217,9 @@ nav {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* mobile-first: una sola columna
+       se expandirá en mayores tamaños mediante media queries */
+    grid-template-columns: 1fr;
     gap: 15px;
     padding: 0 10px;
 }
@@ -543,7 +545,7 @@ footer {
     }
     
     .product-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
@@ -553,6 +555,17 @@ footer {
     
     .hero-content p {
         font-size: 1.2rem;
+    }
+}
+
+/* punto de quiebre adicional para desktop */
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .hero {
+        height: 60vh;
     }
 }
 
