@@ -1,113 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Castillos - Productos Lácteos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Los Castillos</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Los Castillos</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span id="cart-count">0</span>
-            </div>
-            <!-- botón de menú móvil -->
-            <button class="mobile-menu-btn" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
 
-    <!-- menú lateral móvil -->
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu-close" aria-label="Cerrar menú">&times;</button>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </div>
+<header class="header">
 
-    <!-- overlay para menú y modales -->
-    <div class="overlay" id="overlay"></div>
+<div class="container header-content">
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h2>Productos Lácteos de Calidad</h2>
-            <a href="#productos" class="btn">Ver Productos</a>
-        </div>
-    </section>
+<div class="logo">
+<i class="fa-solid fa-cheese"></i>
+<span>Los Castillos</span>
+</div>
 
-    <!-- Products Section -->
-    <section id="productos" class="products">
-        <div class="container">
-            <h2>Nuestros Productos</h2>
-            <div class="product-grid" id="product-grid">
-                <!-- Los productos se cargarán dinámicamente con JavaScript -->
-            </div>
-        </div>
-    </section>
+<nav class="nav">
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
 
-    <!-- Cart Modal -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Tu Carrito de Compras</h2>
-            <div id="cart-items">
-                <!-- Los items del carrito se cargarán aquí -->
-            </div>
-            <div class="cart-total">
-                <h3>Total: $<span id="cart-total">0.00</span></h3>
-            </div>
-            <button id="checkout-btn" class="btn">Completar Pedido por WhatsApp</button>
-        </div>
-    </div>
+<div class="header-actions">
 
-    <!-- About Section -->
-    <section id="nosotros" class="about">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>En "Los Castillos" nos dedicamos a la elaboración de productos Lacteos con todo el amor y la dedicacion posible</p>
-            <p>para que nuestros clientes esten contentos </p>
-        </div>
-    </section>
+<div class="cart-icon">
+<i class="fas fa-shopping-cart"></i>
+<span id="cart-count">0</span>
+</div>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> Carretera Central, KM166 Barrio La Coronela, San Cristobal, Artemisa</p>
-                <p><i class="fas fa-phone"></i> +53 56272873</p>
-                <p><i class="fas fa-clock"></i> Lunes a Sábado: 8:00 AM - 6:00 PM</p>
-            </div>
-        </div>
-    </section>
+<button class="mobile-menu-btn">
+<i class="fas fa-bars"></i>
+</button>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Los Castillos - Todos los derechos reservados</p>
-        </div>
-    </footer>
+</div>
 
-    <script src="script.js"></script>
+</div>
+
+</header>
+
+
+<div class="mobile-menu" id="mobile-menu">
+
+<button class="mobile-menu-close">&times;</button>
+
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+
+<section id="inicio" class="hero">
+
+<div class="hero-content">
+
+<h1>Productos Lácteos Artesanales</h1>
+
+<p>Calidad, frescura y sabor directo de nuestra fábrica</p>
+
+<a href="#productos" class="btn-primary">
+Ver Productos
+</a>
+
+</div>
+
+</section>
+
+
+<section id="productos" class="products">
+
+<div class="container">
+
+<h2 class="section-title">Nuestros Productos</h2>
+
+<div class="product-grid" id="product-grid"></div>
+
+</div>
+
+</section>
+
+
+<div id="cart-modal" class="modal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2>Tu Carrito</h2>
+
+<div id="cart-items"></div>
+
+<div class="cart-total">
+Total: $<span id="cart-total">0</span>
+</div>
+
+<button id="checkout-btn" class="btn-primary">
+Completar pedido por WhatsApp
+</button>
+
+</div>
+
+</div>
+
+
+<section id="nosotros" class="about">
+
+<div class="container">
+
+<h2 class="section-title">Sobre Nosotros</h2>
+
+<p>
+
+En Los Castillos elaboramos productos lácteos y panaderos de forma artesanal.
+Nuestro objetivo es ofrecer calidad, sabor y frescura a todos nuestros clientes.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section id="contacto" class="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contacto</h2>
+
+<div class="contact-info">
+
+<p><i class="fas fa-map-marker-alt"></i> San Cristobal, Artemisa</p>
+
+<p><i class="fas fa-phone"></i> +53 56272873</p>
+
+<p><i class="fas fa-clock"></i> Lunes a Sábado 8AM - 6PM</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2025 Los Castillos</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
