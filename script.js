@@ -2,7 +2,7 @@
 const productos = [
     {
         id: 1,
-        nombre: "Queso Fundido 1kg",
+        nombre: "Queso Fundido 2000 el kg",
         precio: 2000,
         imagen: "media/queso.jpg",
         descripcion: "Queso fresco elaborado artesanalmente con leche de vaca. Perfecto para sandwiches y ensaladas."
@@ -19,16 +19,16 @@ const productos = [
         id: 3,
         nombre: "Cajas de Helado de 4L ",
         precio: 2100,
-        imagen: "",
+        imagen: "/media/helado 4l.jpg",
         descripcion: "Helado Cremoso emvasado en caja de carton"
     },
-    {
-        id: 4,
-        nombre: "cubeta de Helado de 4L ",
-        precio: 2300,
-        imagen: "",
-        descripcion: "Helado Cremoso emvasado en cubeta plastica"
-    },
+    // {
+    //     id: 4,
+    //     nombre: "cubeta de Helado de 4L ",
+    //     precio: 2300,
+    //     imagen: "",
+    //     descripcion: "Helado Cremoso emvasado en cubeta plastica"
+    // },
     {
         id: 5,
         nombre: "paletica con cobertura de chocolate",
@@ -36,21 +36,21 @@ const productos = [
         imagen: "media/pale.jpg",
         descripcion: "Paletica de sabor con una cobertura gruesa de chocolate"
     },
-    {
-        id: 6,
-        nombre: "Bolsa de Pan ",
-        precio: 350,
-        imagen: "media/pan.jpg",
-        descripcion: "bolsa de 8 panes recien hechos envsado al vacio "
-    },
+    // {
+    //     id: 6,
+    //     nombre: "Bolsa de Pan ",
+    //     precio: 350,
+    //     imagen: "media/pan.jpg",
+    //     descripcion: "bolsa de 8 panes recien hechos envsado al vacio "
+    // },
 
-    {
-        id: 7,
-        nombre: "bolitas de queso",
-        precio: 300,
-        imagen: "media/bolas de queso.jpg",
-        descripcion: "bolsita sellada de 10 bolitas de queso ideales para entrantes"
-    },
+    // {
+    //     id: 7,
+    //     nombre: "bolitas de queso",
+    //     precio: 300,
+    //     imagen: "media/bolas de queso.jpg",
+    //     descripcion: "bolsita sellada de 10 bolitas de queso ideales para entrantes"
+    // },
 
     {
         id: 8,
@@ -59,13 +59,13 @@ const productos = [
         imagen: "media/bocaditos.jpg",
         descripcion: "bocaditos semidulces"
     },
-    {
-        id: 9,
-        nombre: "cubeta de Yogurt de 4L ",
-        precio: 2100,
-        imagen: "media/cubeta yog.jpg",
-        descripcion: "Cubeta Plastica de yogurt probiotico de 4lts"
-    },
+    // {
+    //     id: 9,
+    //     nombre: "cubeta de Yogurt de 4L ",
+    //     precio: 2100,
+    //     imagen: "media/cubeta yog.jpg",
+    //     descripcion: "Cubeta Plastica de yogurt probiotico de 4lts"
+    // },
     {
         id: 10,
         nombre: "pan desmayado",
