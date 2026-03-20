@@ -136,14 +136,16 @@ function cargarProductos() {
 function aumentarCantidad(e) {
     const productId = parseInt(e.target.getAttribute('data-id'));
     const input = document.getElementById(`qty-${productId}`);
-    input.value = parseInt(input.value) + 1;
+    if (input) {
+        input.value = parseInt(input.value) + 1;
+    }
 }
 
 // Disminuir cantidad de producto
 function disminuirCantidad(e) {
     const productId = parseInt(e.target.getAttribute('data-id'));
     const input = document.getElementById(`qty-${productId}`);
-    if (parseInt(input.value) > 1) {
+    if (input && parseInt(input.value) > 1) {
         input.value = parseInt(input.value) - 1;
     }
 }
@@ -182,29 +184,33 @@ function actualizarCarrito() {
     let total = 0;
     let count = 0;
     
-    carrito.forEach(item => {
-        const itemTotal = item.precio * item.cantidad;
-        total += itemTotal;
-        count += item.cantidad;
-        
-        const cartItem = document.createElement('div');
-        cartItem.className = 'cart-item';
-        cartItem.innerHTML = `
-            <div class="cart-item-info">
-                <div class="cart-item-name">${item.nombre}</div>
-                <div class="cart-item-price">$${item.precio.toFixed(2)} c/u</div>
-            </div>
-            <div class="cart-item-quantity">
-                <button class="quantity-btn minus" data-id="${item.id}">-</button>
-                <input type="number" value="${item.cantidad}" min="1" class="cart-qty" data-id="${item.id}">
-                <button class="quantity-btn plus" data-id="${item.id}">+</button>
-                <span class="remove-item" data-id="${item.id}">&times;</span>
-            </div>
-            <div class="cart-item-total">$${itemTotal.toFixed(2)}</div>
-        `;
-        
-        cartItems.appendChild(cartItem);
-    });
+    if (carrito.length === 0) {
+        cartItems.innerHTML = '<div style="text-align:center; padding:30px; color:#7a6a5d;">Tu carrito está vacío</div>';
+    } else {
+        carrito.forEach(item => {
+            const itemTotal = item.precio * item.cantidad;
+            total += itemTotal;
+            count += item.cantidad;
+            
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <div class="cart-item-info">
+                    <div class="cart-item-name">${item.nombre}</div>
+                    <div class="cart-item-price">$${item.precio.toFixed(2)} c/u</div>
+                </div>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                    <input type="number" value="${item.cantidad}" min="1" class="cart-qty" data-id="${item.id}">
+                    <button class="quantity-btn plus" data-id="${item.id}">+</button>
+                    <span class="remove-item" data-id="${item.id}">&times;</span>
+                </div>
+                <div class="cart-item-total">$${itemTotal.toFixed(2)}</div>
+            `;
+            
+            cartItems.appendChild(cartItem);
+        });
+    }
     
     cartTotal.textContent = total.toFixed(2);
     cartCount.textContent = count;
@@ -214,8 +220,10 @@ function actualizarCarrito() {
         button.addEventListener('click', (e) => {
             const id = parseInt(e.target.getAttribute('data-id'));
             const item = carrito.find(item => item.id === id);
-            item.cantidad += 1;
-            actualizarCarrito();
+            if (item) {
+                item.cantidad += 1;
+                actualizarCarrito();
+            }
         });
     });
     
@@ -223,7 +231,7 @@ function actualizarCarrito() {
         button.addEventListener('click', (e) => {
             const id = parseInt(e.target.getAttribute('data-id'));
             const item = carrito.find(item => item.id === id);
-            if (item.cantidad > 1) {
+            if (item && item.cantidad > 1) {
                 item.cantidad -= 1;
                 actualizarCarrito();
             }
@@ -234,8 +242,10 @@ function actualizarCarrito() {
         input.addEventListener('change', (e) => {
             const id = parseInt(e.target.getAttribute('data-id'));
             const item = carrito.find(item => item.id === id);
-            item.cantidad = parseInt(e.target.value);
-            actualizarCarrito();
+            if (item && parseInt(e.target.value) > 0) {
+                item.cantidad = parseInt(e.target.value);
+                actualizarCarrito();
+            }
         });
     });
     
@@ -249,7 +259,7 @@ function actualizarCarrito() {
 }
 
 // Abrir modal del carrito
-cartCount.parentElement.addEventListener('click', () => {
+document.querySelector('.cart-icon').addEventListener('click', () => {
     cartModal.style.display = 'block';
 });
 
