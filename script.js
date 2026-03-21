@@ -18,21 +18,21 @@ const productos = [
     {
         id: 3,
         nombre: "Cajas de Helado de 4L ",
-        precio: 2100,
+        precio: 2200,
         imagen: "/media/helado 4l.jpg",
         descripcion: "Helado Cremoso emvasado en caja de carton"
     },
     // {
     //     id: 4,
     //     nombre: "cubeta de Helado de 4L ",
-    //     precio: 2300,
+    //     precio: 4000,
     //     imagen: "",
     //     descripcion: "Helado Cremoso emvasado en cubeta plastica"
     // },
     {
         id: 5,
         nombre: "paletica con cobertura de chocolate",
-        precio: 100,
+        precio: 120,
         imagen: "media/pale.jpg",
         descripcion: "Paletica de sabor con una cobertura gruesa de chocolate"
     },
@@ -69,7 +69,7 @@ const productos = [
     {
         id: 10,
         nombre: "pan desmayado",
-        precio: 130,
+        precio: 140,
         imagen: "media/desmayado.jpg",
         descripcion: "libra de pan al estilo desmayado semidulce"
     },
